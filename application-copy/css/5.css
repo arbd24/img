@@ -1,0 +1,327 @@
+    html,
+    body,
+    td,
+    th {
+        color: #000 !important;
+    }
+
+    body {
+        min-width: 800px;
+    }
+
+    /* body {
+        width: 595px;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+
+    label.control-label {
+        text-align: left;
+        display: block;
+        font-weight: bold;
+    }
+
+    .invalid-feedback {
+        display: none !important;
+    }
+
+    .hide {
+        display: none !important;
+    }
+
+    form.custom-form select.resultSelect {
+        width: calc(100% - 70px) !important;
+    }
+
+    .gpaVal {
+        display: none;
+        padding: 7px !important;
+        width: 65px !important;
+    }
+
+    .row.section {
+        margin-top: 20px;
+    }
+
+    label.label {
+        display: inline-block;
+    }
+
+    table.table td,
+    table.table th {
+        padding: 0 10px;
+        color: #000 !important;
+        font-size: 13px;
+    }
+
+    table.table td.col-1 {
+        text-align: right;
+    }
+
+    td.col-6,
+    td.col-12 {
+        padding: 0 !important;
+    }
+
+    .textWrap {
+        overflow-wrap: break-word;
+        overflow: hidden;
+    }
+
+    #expTable th:first-child,
+    #expTable td:first-child,
+    #otherExpTable th:first-child,
+    #otherExpTable td:first-child {
+        min-width: 20px !important;
+    }
+
+    #otherExpTable td {
+        min-width: 100px !important;
+        line-height: 16px;
+        padding: 5px;
+        border: 1px solid #dadada;
+        vertical-align: middle;
+        font-size: 11px !important;
+    }
+
+    #otherExpTable td.bangla_font {
+        font-size: 12px !important;
+    }
+
+    #expTable th {
+        min-width: 74px;
+        font-size: 11px;
+        text-align: left;
+        padding: 2px;
+    }
+
+    #expTable td {
+        min-width: 74px;
+        font-size: 11px;
+        text-align: left;
+        line-height: 16px;
+    }
+
+    #photo_view,
+    #signature_view {
+        width: 120px;
+        height: 120px;
+        top: 5px;
+        border: 2px solid red;
+        padding: 5px;
+        border-radius: 4px;
+        background-color: #fff;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #signature_view {
+        height: 40px;
+    }
+
+    .form-control-file {
+        width: unset;
+        margin-right: 10px;
+    }
+
+    #download {
+        line-height: 12px;
+        font-weight: bold;
+        font-size: 14px !important;
+    }
+
+    .table td,
+    .table th {
+        font-size: 11px;
+    }
+
+    /* .table,
+    .table td,
+    .table th {
+        background-color: #f9f9f9;
+    } */
+
+    #topTable td,
+    #topTable th,
+    .address td,
+    .address th {
+        /* height: 24px; */
+        line-height: 24px;
+    }
+
+    #topTable,
+    #topTable {
+        border: 1px solid #dee2e6;
+    }
+
+    #topTable td,
+    #topTable th {
+        border-top: 1px solid #dee2e6;
+    }
+
+    #topTable tr:first-child th,
+    #topTable tr:first-child td {
+        border-top: 0;
+    }
+
+    #topTable tr:last-child th,
+    #topTable tr:last-child td {
+        border-bottom: 0;
+    }
+
+    .container {
+        border: none;
+    }
+
+    #headerTable td,
+    #headerTable th {
+        border-top: none;
+    }
+
+    #headerTable label {
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    section.menu_name {
+        border: 1px solid;
+        text-align: center;
+        width: 303px;
+        margin: auto;
+        margin-bottom: 10px;
+        background-color: #f7f5f5;
+        padding: 5px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    section .header_title {
+        font-weight: bold;
+        text-align: center;
+        font-size: 24px;
+        text-transform: uppercase;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    th.col-3,
+    th.col-5,
+    th.col-4,
+    td.col-1 {
+        background-color: #f9f9f9;
+    }
+
+    .verified {
+        position: absolute;
+        left: 50px;
+        border: 1px solid;
+        padding: 5px;
+        height: 20px;
+        line-height: 8px;
+        color: #BC0F17;
+        transform: rotate(355deg);
+        top: 4px;
+        font-weight: bold;
+    }
+
+    .printable footer {
+        background-color: transparent;
+        border-top: 1px solid gray;
+        margin-top: 32px;
+        padding: 0;
+    }
+
+    .printable footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .printable footer {
+        font-size: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .printable footer .copyright {
+        text-align: center;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .printable footer .powered-by {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bangla_font {
+        font-size: 13px !important;
+    }
+
+    #otherExpTable .bangla_font {
+        font-size: 12px !important;
+    }
+
+    fieldset {
+        margin-bottom: 20px;
+    }
+
+    legend {
+        padding: 2px 8px !important;
+        font-size: 14px !important;
+    }
+
+    #expTable td,
+    #expTable th {
+        padding: 2px 3px;
+        border: 1px solid #dadada;
+        vertical-align: middle;
+        line-height: 14px;
+    }
+
+    .before {
+        page-break-before: always;
+    }
+
+    .after {
+        page-break-after: always;
+    }
+
+    .avoid {
+        page-break-inside: avoid;
+    }
+
+    #eduTable td,
+    #eduTable th {
+        padding: 0 5px;
+        font-size: 12px;
+        line-height: 16px;
+        border: 1px solid #dadada;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .table {
+        margin-bottom: 0;
+    }
+
+    .pad_right {
+        padding-right: 130px !important;
+    }
+
+    .word_break {
+        word-break: break-all;
+        line-height: 20px !important;
+    }
+
+    @media print {
+
+        header,
+        footer,
+        #download {
+            display: none;
+        }
+    }
