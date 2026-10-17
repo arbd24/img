@@ -1,0 +1,40 @@
+#EXTM3U
+
+#EXTINF:-1,Discovery HD
+https://drk6xq0vhn.gpcdn.net/live/discovery_hd_abr/live/discovery_hd/chunks.m3u8
+
+#EXTINF:-1,Discovery Kids
+https://drk6xq0vhn.gpcdn.net/live/discovery_kids_abr/live/discovery_kids_480/chunks.m3u8
+
+#EXTINF:-1,Ntv
+https://tvsen5.aynascope.net/xV4jEKf3D9zc/mono.m3u8
+
+#EXTINF:-1,Jamuna
+https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1,Pogo SD
+https://drk6xq0vhn.gpcdn.net/live/pogo_sd_abr/live/pogo_sd/chunks.m3u8
+
+#EXTINF:-1,Somoy
+https://tvsen5.aynascope.net/somoytv/mono.m3u8
+
+#EXTINF:-1,channel 24
+https://drk6xq0vhn.gpcdn.net/live/channel_24_abr/index.m3u8
+
+#EXTINF:-1,ATN
+https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8
+
+#EXTINF:-1,channel i
+https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
+
+#EXTINF:-1,71 tv
+https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8
+
+#EXTINF:-1,independent
+https://drk6xq0vhn.gpcdn.net/live/independent_tv_abr/live/independent_tv_720/chunks.m3u8
+
+#EXTINF:-1, discovery
+http://sm-monirul.xyz/@monirul_Islam_SM/exp.php?id=discovery_bangla&sm=.m3u8
+
+
+
