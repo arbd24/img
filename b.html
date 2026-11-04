@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link href='w-files/icon/lv.png' rel='icon' type='image/x-icon'/> 
+    <title>Bookmark</title>
+</head>
+
+<body>
+
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body { 
+            font-family: 'Calibri', 'Kalpurush', 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px 16px 40px 16px;
+        }
+
+        /* main grid container: keeps everything centered and responsive */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 28px 32px;
+            margin: 0 auto;
+        }
+
+        /* each bookmark card - perfect centering of icon + text */
+        .image-item {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;      /* horizontal center of flex children */
+            justify-content: center;  /* vertical alignment if needed */
+            width: 90px;
+            transition: transform 0.2s ease, opacity 0.2s;
+            cursor: pointer;
+        }
+
+        .image-item:hover {
+            transform: translateY(-4px);
+        }
+
+        /* link resets: block to maintain click area */
+        .image-item a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        /* image wrapper + image styling: perfect circle and consistent size */
+        .image-item img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            border: 1px solid #e2e8f0;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.2s, border-color 0.2s;
+        }
+
+        .image-item a:hover img {
+            border-color: #3c763d;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* name/text label: centered exactly below image, same width */
+        .name {
+            margin-top: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1e293b;
+            text-align: center;
+            line-height: 1.3;
+            letter-spacing: 0.3px;
+            background: transparent;
+            max-width: 100%;
+            word-break: keep-all;
+            white-space: nowrap;
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+            padding: 0 2px;
+        }
+
+        /* responsive: on very small devices, reduce gap and image size slightly */
+        @media (max-width: 560px) {
+            .container {
+                gap: 20px 20px;
+            }
+            .image-item {
+                width: 74px;
+            }
+            .image-item img {
+                width: 56px;
+                height: 56px;
+            }
+            .name {
+                font-size: 12px;
+                margin-top: 8px;
+                white-space: normal;
+                word-break: keep-all;
+                overflow: visible;
+                text-overflow: clip;
+            }
+        }
+
+        /* optional: extra smoothness */
+        a, .image-item {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* small decorative header or just spacing */
+        .page-header {
+            text-align: center;
+            margin-bottom: 32px;
+            font-size: 1.7rem;
+            font-weight: 500;
+            color: #2d3e50;
+            letter-spacing: -0.3px;
+            display: none;
+        }
+</style>
+
+
+<br><br>
+<div class="page-header"></div>
+
+<div class="container">
+
+<!-- _______________________________-->
+<div class="image-item">
+<a href="index.php">
+<img src="w-files/logo/arbd2.png">
+<div class="name"> ArBD </div>
+</a></div>
+
+<!-- _______________________________-->
+<div class="image-item">
+<a href="https://google.com">
+<img src="w-files/logo/google.jpg">
+<div class="name">Google</div>
+</a></div>
+
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="https://duckduckgo.com/?q=allah">
+<img src="w-files/logo/dddd.jpg">
+<div class="name"> Dduckgo </div>
+</a></div>
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="https://mail.google.com/">
+<img src="w-files/logo/gmail.jpg">
+<div class="name"> Gmail </div>
+</a></div>
+
+<!-- _______________________________-->
+<div class="image-item">
+<a href="https://web.whatsapp.com">
+<img src="w-files/logo/whatsapp.jpg">
+<div class="name"> WhatsApp </div>
+</a></div>
+
+<!-- _______________________________-->
+<div class="image-item">
+<a href="https://facebook.com">
+<img src="w-files/logo/facebook.png">
+<div class="name"> Facebook </div>
+</a></div>
+
+<!-- _______________________________-->
+<div class="image-item">
+<a href="https://youtube.com">
+<img src="w-files/logo/youtube.png">
+<div class="name"> Youtube </div>
+</a></div>
+
+<!-- _______________________________-->
+<div class="image-item">
+<a href="https://www.instagram.com/reels">
+<img src="w-files/logo/insta.jpg">
+<div class="name"> instagram </div>
+</a></div>
+
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="https://web.telegram.org/k">
+<img src="w-files/logo/tele.png">
+<div class="name"> Telegram </div>
+</a></div>
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="/url">
+<img src="w-files/logo/srturl.jpg">
+<div class="name"> Short URL</div>
+</a></div>
+
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="fetch.php">
+<img src="w-files/logo/go.jpg">
+<div class="name"> Go W </div>
+</a></div>
+
+<!-- _______________________________-->
+<div class="image-item">
+<a href="/ts">
+<img src="w-files/logo/save.jpg">
+<div class="name"> Text Save</div>
+</a></div>
+
+<!-- _______________________________-->
+<div class="image-item">
+<a href="/ls">
+<img src="w-files/logo/linksave.jpg">
+<div class="name"> Link Save</div>
+</a></div>
+
+<!-- _______________________________-->
+<div class="image-item">
+<a href="https://www.terabox.com/main?category=all">
+<img src="w-files/logo/terabox.jpg">
+<div class="name"> Terabox </div>
+</a></div>
+
+<!-- _______________________________-->
+<div class="image-item">
+<a href="@@">
+<img src="w-files/logo/cpanel.jpg">
+<div class="name"> Panel </div>
+</a></div>
+
+<!-- _______________________________-->
+<div class="image-item">
+<a href="https://chat.deepseek.com">
+<img src="w-files/logo/deepseek.jpg">
+<div class="name"> Deepseek</div>
+</a></div>
+
+<!-- _______________________________-->
+<div class="image-item">
+<a href="https://gemini.google.com">
+<img src="w-files/logo/gemini.jpg">
+<div class="name"> Gemini </div>
+</a></div>
+
+
+<!-- _______________________________-->
+<div class="image-item">
+<a href="font-converter">
+<img src="w-files/logo/font.jpg">
+<div class="name"> Font Conv. </div>
+</a></div>
+<!-- _______________________________-->
+
+
+<div class="image-item">
+<a href="https://github.com/arbd24?tab=repositories">
+<img src="w-files/logo/github.jpg">
+<div class="name"> Github </div>
+</a></div>
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="https://postimages.org">
+<img src="w-files/logo/imgpost.jpg">
+<div class="name"> Post Img </div>
+</a></div>
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="ar-files/my-img/">
+<img src="w-files/logo/gallery.jpg">
+<div class="name"> Gallery </div>
+</a></div>
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="photo-convert">
+<img src="w-files/logo/piccon.jpg">
+<div class="name"> Photo Resize </div>
+</a></div>
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="ssc">
+<img src="w-files/logo/ssc.jpg">
+<div class="name"> Shikkha</div>
+</a></div>
+<!-- _______________________________-->
+
+
+<div class="image-item">
+<a href="https://www.torrentbd.net">
+<img src="w-files/logo/torrent.jpg">
+<div class="name"> TBD </div>
+</a></div>
+
+<!-- _______________________________-->
+<div class="image-item">
+<a href="https://www.blogger.com">
+<img src="w-files/logo/blogger.jpg">
+<div class="name"> Blogger </div>
+</a></div>
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="https://portal.iccbd.com/customer/report">
+<img src="w-files/logo/icc.jpg">
+<div class="name"> ICC Portal</div>
+</a></div>
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="https://cp1.privatedns.top:1551/webmail/?/MobileVersion">
+<img src="w-files/logo/webmail.jpg">
+<div class="name"> Webmail </div>
+</a></div>
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="/v.php?p=14">
+<img src="w-files/logo/movie.jpg">
+<div class="name"> Movies </div>
+</a></div>
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="https://www.the-qrcode-generator.com">
+<img src="w-files/logo/qr.jpg">
+<div class="name"> QR Gen. </div>
+</a></div>
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="https://drive.google.com/drive/starred">
+<img src="w-files/logo/drive.jpg">
+<div class="name"> Drive </div>
+</a></div>
+<!-- _______________________________-->
+
+
+<div class="image-item">
+<a href="https://translate.google.com/?sl=bn&tl=en&op=translate">
+<img src="w-files/logo/gtranslate.jpg">
+<div class="name"> Translate </div>
+</a></div>
+<!-- _______________________________-->
+
+
+<div class="image-item">
+<a href="/b-url/index.php">
+<img src="w-files/logo/srturl2.jpg">
+<div class="name"> BP Srt URL</div>
+</a></div>
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="https://my.satisfyhost.com/cart.php?a=add&domain=register&currency=4">
+<img src="w-files/logo/domain.jpg">
+<div class="name"> Domain Reg </div>
+</a></div>
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="https://yt1s.biz">
+<img src="w-files/logo/ytdownload.jpg">
+<div class="name"> YT Dload </div>
+</a></div>
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="/my/nu_all_notice.php">
+<img src="w-files/logo/nu.jpg">
+<div class="name"> NU Notice</div>
+</a></div>
+
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="/v.php?p=68">
+<img src="w-files/logo/link.jpg">
+<div class="name"> Link List</div>
+</a></div>
+
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="@@">
+<img src="w-files/logo/.jpg">
+<div class="name"> @@ </div>
+</a></div>
+
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="@@">
+<img src="w-files/logo/.jpg">
+<div class="name"> @@ </div>
+</a></div>
+
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="@@">
+<img src="w-files/logo/.jpg">
+<div class="name"> @@ </div>
+</a></div>
+
+<!-- _______________________________-->
+
+<div class="image-item">
+<a href="@@">
+<img src="w-files/logo/.jpg">
+<div class="name"> @@ </div>
+</a></div>
+
+<!-- _______________________________-->
+
+
+</div>
+<br><br><center>mail@arbd.top</center>
+</body>
+</html>
